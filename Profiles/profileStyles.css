@@ -1,0 +1,76 @@
+
+body {
+  background-color: #666666;
+  color: white;
+}
+p{
+  font-family: "Montserrat", sans-serif;
+  color: #e5e5e5;
+}
+
+h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2;
+  color: White;
+}
+.navbar {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.profile-image {
+    border-radius: 100%;
+    width: 100%;
+}
+
+
+
+.fa-star{
+  color: #ffff4c;
+}
+
+.profileView {
+padding-top: 10rem;
+}
+
+#about, #experience, #skills {
+
+    padding:  6% 15% 3%;
+    text-align: center;
+}
+
+#Contact{
+  padding: 2% 15%;
+   background-color: #343a40;
+   text-align: center;
+}
+
+#Contact p {
+  color: #b2b2b2;
+}
+
+.fafooterIcons{
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.fafooterIcons:hover{
+  color: #fff;
+}
+
+
+
+
+@media (max-width: 767px) {
+.profile-image{
+width: auto;
+float: none;
+}
+  .profileView {
+    padding-top: 7rem;
+    text-align: center;
+  }
+}
