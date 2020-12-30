@@ -169,7 +169,13 @@ padding: 3% 15%;
   background-color: #ff4c68;
 
 }
-
+#profiles .card-body{
+  height: 550px;
+}
+#profiles p{
+  padding-left: 15px;
+  text-align: left;
+}
 #team {
   text-align: center;
   padding: 100px;
