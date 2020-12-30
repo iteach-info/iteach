@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <title>Sign In</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts links -->
+  <script src="https://kit.fontawesome.com/a8a1e84689.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="css/SignIn.css">
+
+
+  <script>
+    // Form validation
+    function revalidate() {
+      if (document.myForm.EMail.value == "") {
+        alert("Please provide your Email!");
+        document.myForm.EMail.focus();
+        return false;
+      }
+
+      if (!(document.myForm.EMail.value.includes("@") && document.myForm.EMail.value.includes(".com"))) {
+        alert("Please enter valid Email!");
+        document.myForm.EMail.focus();
+        return false;
+      }
+
+      if (document.myForm.Password.value != "password") {
+        alert("Password not matched. Please Sign Up first!");
+        document.myForm.Password.focus();
+        return false;
+      }
+
+      window.location.href = "http://iteach-info.github.io/iteach/";
+      document.getElementById("newForm").reset();
+
+
+      return (true);
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" href="index.html">iTeach</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+  <section id="SignIn">
+    <div class="col-md-6 offset-md-3 justify-content-center">
+      <div class="card text-center card-form">
+        <div class="card-body">
+          <h3>Sign In</h3>
+          <p class="text-muted">Please fill out the form to Sign In</p>
+          <form id="newForm" name="myForm" onsubmit="return(revalidate());">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" name="EMail" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control form-control-lg" name="Password" placeholder="Password">
+            </div>
+            <input type="submit" name="" value="Sign In" class="btn btn-lg btn-outline-danger btn-block" onclick="revalidate();">
+                  <p class=" pt-3 shift-right" ><a href="SignUp.html" >New User?</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
